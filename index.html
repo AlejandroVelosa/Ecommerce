@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="icon" href="/assets/images/favicon.png">
+    <title>Academlo Ecommerce | Alejandro Velosa</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+      integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body class="body">
+    <div class="countentLoading">
+      <img  class="loading" src="./images/favicon.png" alt="academlo">
+    </div>
+    <!-- este es el header -->
+    <header class="header">
+      <nav>
+        <a href="#home" class="logo_store">
+          <svg xmlns="http://www.w3.org/2000/svg" class="nav_logo-icon">
+            <title>Academlo Logo</title>
+            <g>
+              <g>
+                <path
+                  d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <span>STORE</span>
+        </a>
+        <ul class="menu">
+          <li class="home_text">
+            <a href="#home">Home</a>
+          </li>
+          <li class="products_title">
+            <a href="#products" > Products</a>
+          </li>
+        </ul>
+        <div class="navbar_icons">
+          <i class="bx bx-moon" id="moon"></i>
+          <i class="bx bx-shopping-bag" id="iconCart"
+            ><span id="amountItems">0</span></i
+          >
+          <i id="dashboard-icon" class="bx bxs-dashboard"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- este es el home  -->
+    <section class="home-img--text" id="home">
+      <div class="home_container--img-div">
+        <div class="div"></div>
+        <div class="home_container-img ">
+          <img src="./images/sweater2.png" alt="sweater2" />
+        </div>
+      </div>
+      <div class="home_container--text">
+        <h2 class="home_container-title">New Sweatshirt COLLECTIONS 2022</h2>
+        <p class="home_container-paragragh">
+          Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported
+          from the 2022 series, with a modern design.
+        </p>
+        <p class="home_container-price">$14.00</p>
+        <a href="#products" class="home_container-btn">Show more</a>
+      </div>
+    </section>
+
+    <!-- este es el container -->
+    <main class="container"  id="products">
+      <nav>
+        <div class="menButtons">
+          <button class="filter-button active" data-filter="all">Show all <br>Show all products</button>
+          <button class="filter-button" data-filter=".shirt">Shirt <br> 7 products</button>
+          <button class="filter-button" data-filter=".hoddie">Hoddie <br>6 products</button>
+          <button class="filter-button" data-filter=".sweater">sweater <br> 5 products</button>
+        </div>
+      </nav>
+      <section class="products"></section>
+    </main>
+    <div class="cart">
+      <div class="cart_products"></div>
+      <div class="cart_total">
+        <div class="cart_total-info"></div>
+        <button id="btn_buy">comprar</button>
+      </div>
+    </div>
+    <!-- aqui va el footer -->
+    <footer>
+      <section class="content_footer container">
+        <div class="footer_info">
+          <h3 class="footer_info-title">Our information</h3>
+          <ul>
+            <li>
+              <a href="https://www.academlo.com/" target="_blank"
+                >Toluca - México</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_info">
+          <h3 class="footer_info-title">About Us</h3>
+          <ul>
+            <li><a href="#home">Support Center</a></li>
+            <li><a href="#home">Customer Support</a></li>
+            <li><a href="#home">About Us</a></li>
+            <li><a href="#home">Copy Right</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_info">
+          <h3 class="footer_info-title">Product</h3>
+          <ul>
+            <li><a href="#products">Hoodies</a></li>
+            <li><a href="#products">Shirts</a></li>
+            <li><a href="#products">About Us</a></li>
+            <li><a href="#products">Sweatshirts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_info">
+          <h3 class="footer_info-title">Social</h3>
+          <ul class="footer_link-social">
+            <li>
+              <a href="#" target="_blank">
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <p class="footer_aboutMe">
+          <span>From:</span>  Alejandro Velosa Bolaños
+          <span>Correo:</span>
+          alejovelosa4gmail.com
+          <span>Repositorio:</span>
+          <a href="" target="_blank"> <i class="bx bxl-github"></i> </a
+      </p>
+    </footer>
+
+
+  </body>
+</html>
