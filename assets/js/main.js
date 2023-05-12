@@ -34,6 +34,10 @@ function direcctionPhone() {
     item.addEventListener("click", function () {
       const menu = document.querySelector(".menu");
       menu.classList.remove("menu_show");
+      const dashboardIcon = document.getElementById("dashboard-icon");
+      dashboardIcon.classList.remove("bx-x");
+      dashboardIcon.classList.add("bxs-dashboard");
+      Icon = false;
     });
   });
 }
